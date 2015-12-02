@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="fhir-1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/src/main/java/varun/edu/asu/libs/fhir-1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

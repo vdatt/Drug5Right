@@ -1,0 +1,58 @@
+-injars 'C:\Users\Varun\Documents\MEGAsync\ASU\ResearchDev\Dev\Workspaces\AndroidStudioProjects\ScannerApp\app\build\intermediates\multi-dex\debug\allclasses.jar'
+-outjars 'C:\Users\Varun\Documents\MEGAsync\ASU\ResearchDev\Dev\Workspaces\AndroidStudioProjects\ScannerApp\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'C:\Users\Varun\AppData\Local\Android\sdk\build-tools\22.0.1\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontpreverify
+-dontwarn
+-printconfiguration 'C:\Users\Varun\Documents\MEGAsync\ASU\ResearchDev\Dev\Workspaces\AndroidStudioProjects\ScannerApp\app\build\intermediates\multi-dex\debug\components.flags'
+
+
+-keep class null {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class varun.edu.asu.scannerapp.RoomList {
+    <init>();
+}
+
+-keep class varun.edu.asu.scannerapp.ListviewActivity {
+    <init>();
+}
+
+-keep class varun.edu.asu.scannerapp.PatientInfo {
+    <init>();
+}
+
+-keep class varun.edu.asu.scannerapp.ScannedPatient {
+    <init>();
+}
+
+-keep class varun.edu.asu.scannerapp.DrugInformation {
+    <init>();
+}
+
+-keep class varun.edu.asu.scannerapp.Confirmation {
+    <init>();
+}
+
+-keep class varun.edu.asu.scannerapp.Next {
+    <init>();
+}
+
+-keep class varun.edu.asu.scannerapp.Exceptions {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}

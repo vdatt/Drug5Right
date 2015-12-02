@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="varun.edu.asu.scannerapp.PatientInfo">
+</menu>
+<!-- From: file:/C:/Users/Varun/Documents/MEGAsync/ASU/ResearchDev/Dev/Workspaces/AndroidStudioProjects/ScannerApp/app/src/main/res/menu/menu_patient_info.xml -->

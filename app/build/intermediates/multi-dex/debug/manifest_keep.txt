@@ -1,0 +1,18 @@
+-keep class null {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+-keep class varun.edu.asu.scannerapp.RoomList { <init>(); }
+-keep class varun.edu.asu.scannerapp.ListviewActivity { <init>(); }
+-keep class varun.edu.asu.scannerapp.PatientInfo { <init>(); }
+-keep class varun.edu.asu.scannerapp.ScannedPatient { <init>(); }
+-keep class varun.edu.asu.scannerapp.DrugInformation { <init>(); }
+-keep class varun.edu.asu.scannerapp.Confirmation { <init>(); }
+-keep class varun.edu.asu.scannerapp.Next { <init>(); }
+-keep class varun.edu.asu.scannerapp.Exceptions { <init>(); }
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+-keep public class * extends java.lang.annotation.Annotation {
+    *;
+}

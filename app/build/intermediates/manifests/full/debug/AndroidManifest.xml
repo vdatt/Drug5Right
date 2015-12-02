@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="varun.edu.asu.scannerapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+ <!-- uses-sdk android:minSdkVersion="9" / -->
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_action_pill"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="varun.edu.asu.scannerapp.RoomList"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="varun.edu.asu.scannerapp.ListviewActivity"
+            android:label="@string/title_activity_listview"
+            android:parentActivityName="varun.edu.asu.scannerapp.RoomList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="varun.edu.asu.scannerapp.RoomList" />
+        </activity>
+        <activity
+            android:name="varun.edu.asu.scannerapp.PatientInfo"
+            android:label="@string/title_activity_patient_info"
+            android:parentActivityName="varun.edu.asu.scannerapp.ListviewActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="varun.edu.asu.scannerapp.ListviewActivity" />
+        </activity>
+        <activity
+            android:name="varun.edu.asu.scannerapp.ScannedPatient"
+            android:label="@string/title_activity_scanned_patient"
+            android:parentActivityName="varun.edu.asu.scannerapp.PatientInfo" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="varun.edu.asu.scannerapp.PatientInfo" />
+        </activity>
+        <activity
+            android:name="varun.edu.asu.scannerapp.DrugInformation"
+            android:label="@string/title_activity_drug_information"
+            android:parentActivityName="varun.edu.asu.scannerapp.ScannedPatient" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="varun.edu.asu.scannerapp.ScannedPatient" />
+        </activity>
+        <activity
+            android:name="varun.edu.asu.scannerapp.Confirmation"
+            android:label="@string/title_activity_confirmation"
+            android:parentActivityName="varun.edu.asu.scannerapp.ListviewActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="varun.edu.asu.scannerapp.ListviewActivity" />
+        </activity>
+        <activity
+            android:name="varun.edu.asu.scannerapp.Next"
+            android:label="@string/title_activity_next"
+            android:parentActivityName="varun.edu.asu.scannerapp.Exceptions" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="varun.edu.asu.scannerapp.Exceptions" />
+        </activity>
+        <activity
+            android:name="varun.edu.asu.scannerapp.Exceptions"
+            android:label="@string/title_activity_exceptions" />
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
